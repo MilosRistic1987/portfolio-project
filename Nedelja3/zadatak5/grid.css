@@ -1,0 +1,35 @@
+.contanier {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+.mainpart {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+}
+.logo {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.logoImg {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.logoHeading {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.backgr {
+  display: grid;
+  justify-items: center;
+  align-items: start;
+}
+.counter {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.counterPizza {
+  padding-top: 40px;
+}
