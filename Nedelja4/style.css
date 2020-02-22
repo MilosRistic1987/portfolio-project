@@ -1,0 +1,40 @@
+span {
+  font-size: 40px;
+  color: indianred;
+  font-weight: 700;
+}
+ul {
+  font-size: 20px;
+  color: rgb(109, 100, 100);
+  list-style: none;
+}
+img {
+  width: 200px;
+  height: 200px;
+  margin-left: 35px;
+}
+body {
+  font-family: Lato, sans-serif;
+  background-image: url(./pokemohd.jpg);
+  background-size: cover;
+}
+div {
+  padding-left: 20px;
+}
+button {
+  border-radius: 5px;
+  background-color: peru;
+  color: seashell;
+  font-size: 20px;
+  border: 2px solid indianred;
+}
+button:hover {
+  background-color: khaki;
+  border: 2px solid indianred;
+  color: darkgrey;
+}
+hr {
+  height: 8px;
+  background-color: khaki;
+  border: 2px solid black;
+}
