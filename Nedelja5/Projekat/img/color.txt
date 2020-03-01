@@ -1,0 +1,3 @@
+light grey :#dfe6e9
+dark grey :#b2bec3
+button color:#fab1a0

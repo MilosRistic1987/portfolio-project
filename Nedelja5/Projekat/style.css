@@ -1,0 +1,401 @@
+* {
+  font-family: "Lato", sans-serif;
+  font-size: 62.5%;
+}
+
+.contanier {
+  display: grid;
+  grid-template-rows: 1.5fr 6fr;
+  margin: 0 auto;
+  padding: 0%;
+  /* height: 100vh; */
+  width: 95vw;
+  background-image: radial-gradient(
+      closest-side,
+      #116566ea,
+      rgba(44, 53, 49, 0.938)
+    ),
+    url(./img/medicine-health-money-budget.jpg);
+}
+
+.firstPart {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.mainDiv {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+}
+
+.todoList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.incomeDiv {
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+}
+
+.expenceDiv {
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+}
+
+.formDiv {
+  display: grid;
+  align-items: center;
+}
+
+.logoDiv {
+  display: grid;
+  align-items: center;
+  justify-items: right;
+}
+
+.logoImg {
+  width: 10.5rem;
+  height: 10.5rem;
+  opacity: 0.8;
+  margin-right: 6rem;
+}
+
+.logoImg:hover {
+  opacity: 1;
+}
+
+form {
+  margin-left: 6rem;
+}
+
+#inputText {
+  font-size: 1.4rem;
+  padding: 1.5rem;
+  width: 13rem;
+  transition: all 0.7s ease-out;
+  background-color: #d9b08c;
+  opacity: 0.9;
+  border-radius: 0.6rem;
+  border-style: none;
+  margin-right: 1.2rem;
+  color: #2c3531;
+  outline: none;
+}
+#inputText:focus {
+  width: 25%;
+  background-color: #d9b08c;
+  color: #e4e6e7;
+  opacity: 1;
+}
+
+#inputText:focus::placeholder {
+  color: #e4e6e7;
+  text-transform: capitalize;
+}
+
+#inputNumber {
+  font-size: 1.4rem;
+  padding: 1.5rem;
+  background-color: #d9b08c;
+  opacity: 0.9;
+  border-radius: 0.6rem;
+  border-style: none;
+  margin-right: 1.2rem;
+  color: #2c3531;
+  outline: none;
+}
+
+#inputNumber:focus {
+  background-color: #d9b08c;
+  color: #e4e6e7;
+  opacity: 1;
+}
+
+#inputNumber:focus::placeholder {
+  color: #e4e6e7;
+  text-transform: capitalize;
+}
+
+#btnSumbit {
+  font-size: 1.4rem;
+  height: 3.5rem;
+  background-color: #e98074;
+  padding: 0.6rem;
+  color: #e4e6e7;
+  border-radius: 0.6rem;
+  border-style: none;
+  font-weight: 900;
+  text-transform: uppercase;
+  opacity: 0.9;
+  width: 15rem;
+  outline: none;
+}
+#btnSumbit:hover {
+  opacity: 1;
+}
+
+#selection {
+  font-size: 1.4rem;
+  width: 16rem;
+  padding: 1.5rem;
+  background-color: #d9b08c;
+  opacity: 0.9;
+  border-radius: 0.6rem;
+  border-style: none;
+  color: #e4e6e7;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-right: 1.2rem;
+  outline: none;
+}
+
+#selection:hover {
+  opacity: 1;
+}
+
+.optionIncome {
+  background-color: #3c4742;
+  text-transform: lowercase;
+  font-size: 2rem;
+  border-radius: 0.6rem;
+  border: none;
+  outline: none;
+}
+
+.optionIncome:focus {
+  background-color: #d9b08c;
+}
+
+.optionExpense {
+  background-color: #2c3531;
+  text-transform: lowercase;
+  font-size: 2rem;
+  border-radius: 0.6rem;
+  border: none;
+  outline: none;
+}
+
+.optionExpense:focus {
+  background-color: #d9b08c;
+}
+
+h2 {
+  padding-left: 3rem;
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #e4e6e7;
+  border-bottom: 0.2rem solid #00b894;
+  width: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  padding-bottom: 0.7rem;
+}
+
+.borderWidth {
+  width: 72%;
+  margin-left: 6rem;
+}
+
+#incomeList {
+  max-height: 50rem;
+  overflow-y: overlay;
+}
+
+#expenceList {
+  max-height: 50rem;
+  overflow-y: overlay;
+}
+
+::-webkit-scrollbar {
+  width: 1.8rem;
+  box-shadow: inset 0 0 5px grey;
+  background-color: #00b894;
+  border-radius: 0.6rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #313a36;
+  border-radius: 1rem;
+  height: 1rem;
+}
+
+.incomeHeading {
+  margin-left: 6rem;
+}
+
+span {
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #d9b08c;
+}
+
+.summNumber {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.incomeSumm {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #e4e6e7;
+}
+
+.expenseSumm {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #ffcb9a;
+}
+
+.borderHeading {
+  border-bottom: 0.6rem solid #116566ea;
+}
+
+.finalBudgetDiv {
+  display: grid;
+  grid-template-rows: 1.5fr 3fr;
+}
+
+.headingpara {
+  color: #63756d;
+  font-size: 2.2rem;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+.budgetNumber {
+  display: grid;
+  align-items: center;
+  justify-items: right;
+}
+
+.budgetParagraph {
+  color: #00b894;
+  font-size: 3.7rem;
+  font-weight: 400;
+  margin-bottom: 5.5rem;
+  padding-right: 3.6rem;
+}
+
+.budgetParagraphRed {
+  color: #e98074;
+  font-size: 3.7rem;
+  font-weight: 400;
+  margin-bottom: 7.5rem;
+  padding-right: 3.6rem;
+}
+
+.expensePresent {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin-right: 1.3rem;
+}
+
+.present {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  opacity: 0.8;
+  color: #e4e6e7;
+  background-color: #e98074;
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+  border-style: none;
+  width: 6rem;
+  height: 3.1rem;
+  text-align: center;
+  box-shadow: 0.2rem 0.2rem 0.4rem #1d2122;
+}
+
+/*---------------------------------------------------jshtml----------------------------------------------------------*/
+
+.listCapsula1 {
+  display: grid;
+  grid-template-columns: 3fr 3fr 0.7fr;
+  background-image: linear-gradient(
+    to right,
+    rgba(217, 176, 140, 0.808),
+    rgba(217, 176, 140, 0.938)
+  );
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  margin-bottom: 0.8rem;
+  margin-left: 6rem;
+  width: 72%;
+  border-bottom: 0.3rem solid #2c3531;
+  transition: all 1.2s ease-in;
+  justify-items: center;
+  align-items: center;
+}
+
+#removeBtn {
+  opacity: 0;
+  font-size: 1.3rem;
+  background-color: #2c3531;
+  border-radius: 0.7rem;
+  border-style: none;
+  font-weight: 900;
+  color: #e4e6e7;
+  height: 4rem;
+  text-align: center;
+  box-shadow: 0.1rem 0.1rem 0.2rem #2d3436;
+}
+
+#removeBtn:hover {
+  opacity: 1;
+}
+
+#textDesc {
+  font-size: 1.7rem;
+  font-weight: 900;
+  font-style: italic;
+  color: #d1e8e2;
+  text-transform: capitalize;
+  letter-spacing: 0.15rem;
+}
+
+#amount {
+  font-size: 1.7rem;
+  font-weight: 900;
+  letter-spacing: 0.3rem;
+  color: #d1e8e2;
+}
+
+.finalCard {
+  display: grid;
+  grid-template-rows: 1.5fr 2fr;
+  margin: 5.5rem 8rem;
+  border-radius: 0.6rem;
+  background: linear-gradient(to top, #2c3531, #63756d);
+  /* border: 2px solid #e4e6e7 ; */
+  box-shadow: 0.3rem 0.3rem 0.5rem #1d2122;
+}
+
+.finalBudgetDiv {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  background-color: #d1e8e2;
+  border-top-right-radius: 0.6rem;
+  border-top-left-radius: 0.6rem;
+}
+
+.incomeExpenseDiv {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.incomeFiled {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  align-items: center;
+}
+
+.expenseFiled {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 0.6fr;
+  align-items: center;
+}

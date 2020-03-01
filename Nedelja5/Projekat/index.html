@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,400,400i,700,900,900i&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="contanier">
+      <div class="firstPart">
+        <div class="formDiv">
+          <form action="" id="form">
+            <select name="select" id="selection" required>
+              <option disabled selected hidden>Please Select</option>
+              <option class="optionIncome" value="income">income</option>
+              <option class="optionExpense" value="expense">expense</option>
+            </select>
+            <input
+              type="text"
+              name=""
+              id="inputText"
+              placeholder="transaction type"
+              required
+            />
+            <input
+              type="number"
+              name=""
+              id="inputNumber"
+              min="0"
+              placeholder="amount"
+              required
+            />
+            <input id="btnSumbit" type="submit" value="Submit" />
+          </form>
+        </div>
+        <div class="logoDiv">
+          <img src="./img/logo.png" alt="logo" class="logoImg" />
+        </div>
+      </div>
+      <div class="mainDiv">
+        <div class="todoList">
+          <div class="incomeDiv">
+            <div class="incomeHeading">
+              <h2>Inco<span>m</span>e</h2>
+            </div>
+            <div id="incomeList"></div>
+          </div>
+          <div class="expenceDiv">
+            <div class="expenceHeading">
+              <h2 class="borderWidth">Expen<span>s</span>es</h2>
+            </div>
+            <div id="expenceList"></div>
+          </div>
+        </div>
+        <div class="finalCard">
+          <div class="finalBudgetDiv">
+            <div class="budgetHeading"></div>
+            <div class="budgetNumber">
+              <p class="budgetParagraph"></p>
+            </div>
+          </div>
+          <div class="incomeExpenseDiv">
+            <div class="incomeFiled">
+              <div class="incomeFiledHeading">
+                <h2 class="borderHeading">Inco<span>m</span>e :</h2>
+              </div>
+              <div class="summNumber">
+                <p class="incomeSumm"></p>
+              </div>
+            </div>
+            <div class="expenseFiled">
+              <div class="expenseFiledHeading">
+                <h2 class="borderHeading">Expen<span>s</span>es :</h2>
+              </div>
+              <div class="summNumber">
+                <p class="expenseSumm"></p>
+              </div>
+              <div class="expensePresent">
+                <p class="present"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
