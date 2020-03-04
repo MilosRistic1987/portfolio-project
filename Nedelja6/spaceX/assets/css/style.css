@@ -1,0 +1,166 @@
+body {
+  font-family: "Lato", sans-serif;
+  background-image: url(../images/spaceX.jpg);
+  font-size: 62.5%;
+  background-position: center;
+}
+.launch-list {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.launch {
+  width: 20%;
+  height: 32rem;
+  text-align: center;
+  color: rgb(248, 242, 242);
+  margin: 1rem 2rem;
+  margin-bottom: 5rem;
+  transition: transform 0.2s;
+  background-image: linear-gradient(
+    to top right,
+    rgb(248, 242, 242, 1),
+    rgba(12, 57, 117, 0.9)
+  );
+  box-shadow: 0.5rem 0.5rem 0.7rem #131414;
+  border-radius: 0.7rem;
+  font-weight: 700;
+}
+
+.launch:hover {
+  transform: scale(1.1);
+  animation: rotate 1.7s ease infinite;
+  animation-delay: 1.5s;
+}
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotateY(180deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotateY(0deg);
+    opacity: 0;
+  }
+}
+
+.inner-div-0 {
+  height: 17rem;
+  width: 100%;
+}
+.inner-div-0 img {
+  padding-top: 2rem;
+  height: 70%;
+  width: 44%;
+  /* width: 100%; */
+}
+.inner-div-1 {
+  height: 7.8rem;
+  width: 100%;
+  clip-path: polygon(11% 0, 100% 0, 100% 100%, 8% 100%);
+  text-align: right;
+  background-image: linear-gradient(
+    to right,
+    rgb(209, 221, 219, 1),
+    rgba(29, 106, 150, 0.9)
+  );
+  border-top: 1.6px solid rgb(209, 221, 219);
+}
+.inner-div-2 {
+  height: 4.5rem;
+  width: 100%;
+  clip-path: polygon(11% 0, 100% 0, 100% 100%, 8% 100%);
+  text-align: right;
+  background-image: linear-gradient(
+    to right,
+    rgb(209, 221, 219, 1),
+    rgba(29, 106, 150, 0.9)
+  );
+}
+
+span {
+  display: inline-block;
+  margin-top: 1.23rem;
+  margin-right: 0.5rem;
+}
+
+#rocket {
+  position: absolute;
+  visibility: hidden;
+  left: 35%;
+  animation: fly 3s 0.5s ease-in;
+}
+
+@keyframes fly {
+  0% {
+    visibility: visible;
+    bottom: -60rem;
+  }
+  100% {
+    bottom: 100%;
+  }
+}
+
+header {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(12, 57, 117, 0.6),
+    rgba(12, 57, 117, 0.05)
+  );
+}
+.span1 {
+  font-weight: 900;
+  color: rgb(248, 242, 242);
+  text-shadow: none;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  padding-left: 3rem;
+}
+
+label {
+  display: block;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(248, 242, 242);
+}
+.label0 {
+  font-size: 5.5rem;
+  letter-spacing: 0.4rem;
+}
+
+.label1 {
+  font-family: "Caveat", cursive;
+}
+.spanX {
+  color: rgb(211, 102, 117);
+  font-weight: 500;
+}
+section {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+select {
+  clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0 100%);
+  background-color: rgba(29, 106, 150, 0.9);
+  border-radius: 0.5rem;
+  width: 13rem;
+  height: 5.5rem;
+  color: rgb(248, 242, 242);
+  padding: 0.6rem 0 0.6rem 3.4rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  letter-spacing: 0.18rem;
+}
+option {
+  font-size: 1.6rem;
+}
