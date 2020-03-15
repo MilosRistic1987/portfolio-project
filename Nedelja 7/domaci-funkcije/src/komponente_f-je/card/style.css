@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.capsula {
+  display: grid;
+  grid-template-rows: 1.5fr 2fr;
+  height: 600px;
+  width: 400px;
+  background: linear-gradient(
+    to right bottom,
+    rgb(65, 62, 62),
+    rgb(204, 197, 197)
+  );
+  border-radius: 10px;
+}
+
+img {
+  width: 350px;
+}
+
+h2 {
+  font-size: 40px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgb(211, 189, 189);
+  text-align: center;
+  padding-top: 50px;
+  text-shadow: 2px 2px rgb(41, 39, 39);
+}
