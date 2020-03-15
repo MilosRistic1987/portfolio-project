@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.capsula {
+  display: grid;
+  grid-template-rows: 1.5fr 2fr;
+  height: 600px;
+  width: 400px;
+  background: linear-gradient(
+    to right bottom,
+    rgb(216, 8, 8),
+    rgb(196, 71, 71)
+  );
+  border-radius: 20px;
+}
+
+img {
+  width: 280px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgb(211, 189, 189);
+  text-align: center;
+  padding-top: 50px;
+  text-shadow: 2px 2px rgb(41, 39, 39);
+}
+
+.descDiv {
+  background: linear-gradient(
+    to right bottom,
+    rgb(10, 138, 63),
+    rgb(44, 87, 62)
+  );
+  clip-path: polygon(0 8%, 100% 16%, 100% 100%, 0 90%);
+}
+.imgDiv {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
