@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.mainDiv{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  background-image:linear-gradient(to bottom,rgb(87, 93, 175,0.2),rgb(83, 77, 168,0.6)),url('./telephone.jpg');
+  height: 100vh;
+}
+
+form{
+  
+  color: rgb(235, 226, 226);
+  margin-left: 30px;
+}
+
+input{
+  display:block;
+  outline: none;
+  border: none;
+  width: 200px;
+  background-color: rgb(94, 86, 112);
+  color:  rgb(235, 226, 226);
+  border-radius: 10px;
+  height: 50px;
+  padding: 5px;
+  margin: 10px 0;
+}
+small{
+  display: block;
+  font-weight: 700;
+}
+
+button{
+  width: 120px;
+  height: 30px;
+  padding: 2px;
+  font-weight: 600;
+  border: 3px solid rgb(153, 81, 153);
+  background-color: violet;
+  border-radius: 10px;
+  color: whitesmoke;
+  margin: 10px 0;
+  font-size: 18px;
+  outline: none;
+
+}
+label{
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+.search{
+  margin-left: 30px;
+  color: rgb(235, 226, 226);
+}
+
+.listCapsula{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 500px;
+  background: linear-gradient(to right,rgb(99, 47, 110),rgb(81, 10, 95));
+  border-radius: 10px;
+  margin-top: 10px;
+ 
+  
+}
+
+.handWrite{
+  font-family: 'Liu Jian Mao Cao', cursive;
+  color:black ;
+  font-size: 22px;
+  text-align: left;
+  padding-left:15px;
+  font-weight: lighter;
+}
+
+.phoneNumber{
+  color:rgb(247, 238, 238) ;
+  font-size: 15px;
+  text-align: center;
+  padding-left:8px;
+  font-weight: 700;
+  text-shadow: 1.3px 1.3px 2px rgb(94, 86, 112);
+}
+
+
+
+
+.polygon{
+  clip-path: polygon(6% 50%,20% 25%,100% 25%,100% 75%,20% 75%);
+  background-color: whitesmoke;
+}
+.shape{
+  display: grid;
+  align-items: center;
+}  
