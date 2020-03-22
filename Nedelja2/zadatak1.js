@@ -1,4 +1,4 @@
-var a = 3;
+var a = 2;
 var b = 5;
 console.log(`Zbir brojeva je: ${a + b}`);
 console.log(`Razlika brojeva je: ${a - b}`);
