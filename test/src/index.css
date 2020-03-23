@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.mainDiv{
+  background-color: #2f4454;
+}
+
+.select{height:60px;}
+
+.WorkerList{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.workerCard{
+  height:500px;
+  width: 400px;
+  display: grid;
+  align-items: center;
+  justify-items: left;
+  grid-template-rows: 1.5fr 1fr;
+  border-radius: 12px;
+  box-shadow: 2px 2px 4px black;
+  margin: 12px; 
+  background: #376e6f;
+  padding-left: 20px;
+}
+
+label{
+  display:block;
+  margin:20px 0;
+  color: #2e151b;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.imgDiv{
+  background-image:url('./worker.jpg');
+  background-size: cover;
+  background-position: center;
+  
+}
+
+button{
+  width: 80px;
+  height: 40px;
+  padding: 5px;
+  background-color: #376e6f;
+  display: inline-block;
+  margin: 10px;
+}
