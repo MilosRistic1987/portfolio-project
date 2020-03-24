@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi+2:400,500,600,700,800&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Baloo Thambi 2', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #2f4454;
 }
 
 code {
@@ -12,51 +13,157 @@ code {
     monospace;
 }
 
-.mainDiv{
+.WorkerList{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   background-color: #2f4454;
 }
 
-.select{height:60px;}
-
-.WorkerList{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 .workerCard{
-  height:500px;
-  width: 400px;
   display: grid;
-  align-items: center;
-  justify-items: left;
-  grid-template-rows: 1.5fr 1fr;
+  grid-template-rows: 1fr 1.5fr;
+  width: 400px;
+  height: 520px;
+  margin:15px;
+  background:linear-gradient(to top,#376e6f,#1c3334) ;
   border-radius: 12px;
   box-shadow: 2px 2px 4px black;
-  margin: 12px; 
-  background: #376e6f;
-  padding-left: 20px;
+  position: relative;
 }
 
-label{
-  display:block;
-  margin:20px 0;
-  color: #2e151b;
-  font-weight: bold;
-  font-size: 25px;
+.firstPart{
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
 }
 
 .imgDiv{
-  background-image:url('./worker.jpg');
+  background-image: linear-gradient(to bottom,rgb(218, 123, 147,0.3),rgb(46, 21, 27, 0.9)),url('./worker.jpg');
+background-size: cover;
+background-position: center;
+border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+}
+
+.logoDiv:hover .overlay {
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to top,rgb(218, 123, 147,0.3),rgb(46, 21, 27, 0.9)),url('./workers.jpg');
   background-size: cover;
   background-position: center;
-  
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 1.5s ease-in-out;
+}
+
+span{
+  font-weight: 600;
+  color:#da7b93;
+}
+
+
+.logoDiv{
+  display: grid;
+align-items: top;
+justify-items: right;
+padding: 12px;
+
+}
+
+img{
+  width: 70px;
+  height: 70px;
+}
+.textDiv{
+  padding-left: 12px;
+}
+label{
+  display: block;
+  margin: 12px 0;
+  color: #f7fbdf;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+h2{
+  background-color:#2e151b ;
+  color:#f7fbdf;
+  letter-spacing: 1.3px;
+  font-weight: 500;
+  height: 80px;
+  width: 90%;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 1.3px 1.3px 2px black;
 }
 
 button{
-  width: 80px;
+  width: 40px;
   height: 40px;
-  padding: 5px;
-  background-color: #376e6f;
-  display: inline-block;
-  margin: 10px;
+  background-color:#376e6f;
+  color:#f7fbdf;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-weight: 900;
+  box-shadow: 1.3px 1.3px 2px black;
+  margin-right: 12px;
+}
+
+button:hover{
+  background-color:#54a2a3;
+}
+
+input{
+  outline: none;
+  margin-right:12px ;
+  border: 4px solid #426077;
+  border-radius:10px ;
+  background-color: #f7fbdf;
+  height: 25px;
+  margin-bottom: 12px;
+  margin-left: 12px;
+  margin-top: 12px;
+}
+
+input::placeholder{
+  padding-left: 5px;
+  color:#2e151b;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  opacity: 0.6;
+}
+
+.formBtn{
+  width: 100px;
+  height: 20px;
+ 
+}
+
+select{
+  outline: none;
+  border: 4px solid #426077;
+  border-radius:10px ;
+  background-color: #f7fbdf;
+  height: 25px;
+  color:#2e151b;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-left: 12px;
+  
+}
+option{
+  border-radius:10px ;
+  background-color:#426077;
+  color:#f7fbdf ;
 }
