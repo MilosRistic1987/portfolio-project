@@ -14,6 +14,7 @@ const [startIndex,setStartIndex]=useState(0);
 const [endIndex,setEndIndex]=useState(workers.length-1);
 const [selectedWorkersScope,setSelectedWorkersScope]=useState('all');
 const [selectedPage,setSelectedPage]=useState(1)
+const [sortSalary,setSortSalary]=useState('Salary Up')
 
 useEffect(()=>{
   GetAllWorkers().then(res =>{
@@ -31,9 +32,9 @@ useEffect(()=>{
 
   return (
     <div className='mainDiv'>
-        <SelectWorkers selectedWorkersScope={selectedWorkersScope} setSelectedWorkersScope={setSelectedWorkersScope} setSelectedPage={setSelectedPage}/>
-      <AllWorkers selectedWorkersScope={selectedWorkersScope} startIndex={startIndex} endIndex={endIndex} workers={workers} setSelectedPage={setSelectedPage}/>
-     <Form/>
+      <Form/>
+        <SelectWorkers selectedWorkersScope={selectedWorkersScope} setSelectedWorkersScope={setSelectedWorkersScope} setSelectedPage={setSelectedPage} setSortSalary={setSortSalary}/>
+      <AllWorkers selectedWorkersScope={selectedWorkersScope} startIndex={startIndex} endIndex={endIndex} workers={workers} setSelectedPage={setSelectedPage} sortSalary={sortSalary}/>
     </div>
    
   );

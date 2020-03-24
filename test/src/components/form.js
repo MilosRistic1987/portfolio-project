@@ -8,9 +8,9 @@ const Form=()=>{
 
     return <div>
         <form type='submit' onSubmit={(e)=>{e.preventDefault(); PostNewWorker(name,salary).then(res=>{console.log(res)})}}>
-        <input onChange={(e)=>setName(e.target.value)} type='text'></input>
-        <input  onChange={(e)=>setSalary(e.target.value)}type='number'></input>
-        <button type='submit'>Submit</button>
+        <input  onChange={(e)=>setName(e.target.value)} type='text' placeholder='Name&Surname'></input>
+        <input  onChange={(e)=>setSalary(e.target.value)}type='number'  placeholder='Sallary'></input>
+        <button className='formBtn' type='submit'>Submit</button>
         </form>
        
     </div>
